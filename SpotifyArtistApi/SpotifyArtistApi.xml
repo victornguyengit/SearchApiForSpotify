@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SpotifyArtistApi</name>
+    </assembly>
+    <members>
+        <member name="M:SpotifyArtistApi.Controllers.v1.ArtistController.Artist(System.String)">
+            <summary>
+            Action to get an artists name and id 
+            </summary>
+            <param name="searchCriteria">The name of the artist</param>
+            <returns>Returns the artists id and name</returns>
+            <response code="200">Returned if the artist was found</response>
+            <response code="204">Returned if no artists were found</response>
+        </member>
+    </members>
+</doc>

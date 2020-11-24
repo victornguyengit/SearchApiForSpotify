@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\Users\victo\source\repos\SpotifyArtistApi\SpotifyArtistApi\SpotifyArtistApi.xml</DocumentationFile>
+    <NoWarn>1701;1702;1591</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SpotifyArtistApi.Data\SpotifyArtistApi.Data.csproj" />
+    <ProjectReference Include="..\SpotifyArtistApi.Domain\SpotifyArtistApi.Domain.csproj" />
+    <ProjectReference Include="..\SpotifyArtistApi.Service\SpotifyArtistApi.Service.csproj" />
+  </ItemGroup>
+
+
+</Project>
